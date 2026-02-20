@@ -33,9 +33,21 @@ namespace UveghazP
 				return this.nev.Substring(0, 3);
 			}
 		}
+
+		public override bool Equals(object obj)
+		{
+			obj = obj as Novenyfaj;
+			if(this.nev == ((Novenyfaj)(obj)).nev)
+			{
+				return true;
+			}
+			return false;
+		}
+
+
 		public override string ToString()
 		{
-			return $"{this.nev} - Nedvességtartalom: {this.nedvessegtartalom}%, Egészségszint: {this.egeszsegszint}% ideális egyedszám: ({this.optimalissuruseg})";
+			return $"{this.nev} - Nedvességtartalom: {this.nedvessegtartalom}%, Egészségszint: {this.egeszsegszint}% ideális egyeds  {this.optimalissuruseg}%)";
 		}
 	} 
 }
