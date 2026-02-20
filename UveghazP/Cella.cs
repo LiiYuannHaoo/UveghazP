@@ -71,5 +71,15 @@ namespace UveghazP
 			this.novenyfaj = null;
 			this.egyedszam = 0;
 		}
+
+		public override string ToString()
+		{
+			if (this.Urese)
+			{
+				return $"| {"üres",8} |";
+			}
+			return $"| {this.novenyfaj.Azonosito,3} {this.egyedszam,2}db |";
+
+		}
 	}
 }

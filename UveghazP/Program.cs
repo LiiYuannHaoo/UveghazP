@@ -21,6 +21,9 @@
 			adattar.Ujnoveny(new Novenyfaj("Spenót", 7));
 
 			adattar.Novenyeklistazasa();
+			adattar.Uveghaz.Matrixkiir();
+			adattar.Ultetes();
+			adattar.Uveghaz.Matrixkiir();
 		}
     }
 }
